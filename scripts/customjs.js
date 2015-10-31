@@ -1,18 +1,17 @@
 
  $(document).ready( function() {
-     $('#wisdom_api_button').click(getQuoteFromWisdomAPI);
      $('#famous_quote_button').click(getQuoteFromAndruxnetAPI);
  });
 
 //https://github.com/gophergala/wisdom
-function getQuoteFromWisdomAPI(){
+/*function getQuoteFromWisdomAPI(){
 	function showQuote(result){
 		$('#quote_text').html(result.content);
 		$('#quote_author').html(result.author.name);
 		console.log(result.content);
 	}
 	$.getJSON('https://wisdomapi.herokuapp.com/v1/random', showQuote);
-}
+}*/
 //https://market.mashape.com/andruxnet/random-famous-quotes
 function getQuoteFromAndruxnetAPI(){
 	function showQuote(result){
