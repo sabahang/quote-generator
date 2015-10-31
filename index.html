@@ -59,6 +59,9 @@
         <p id="quote_author" class="lead">Knowledge sets you free, use it to liberate yourself and others</p>
         <button id="famous_quote_button" class="btn btn-lg btn-success">Generate Quote</button>
       </div>
+      <div id="twitter">
+      	<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Generate+a+random+quote+at&url=http%3A%2F%2Fsabahang.github.io%2Fquote-generator%2F&via=SabaAhang" data-size="large" align="left">Tweet</a>
+      </div>
 
     </div><!-- /.container -->
 
@@ -69,6 +72,22 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="scripts/customjs.js"></script>
+    <script>window.twttr = (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0],
+	    t = window.twttr || {};
+	  if (d.getElementById(id)) return t;
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = "https://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	 
+	  t._e = [];
+	  t.ready = function(f) {
+	    t._e.push(f);
+	  };
+	 
+	  return t;
+	}(document, "script", "twitter-wjs"));</script>
 
   </body>
 </html>
