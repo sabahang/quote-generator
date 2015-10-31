@@ -37,12 +37,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Quote Generator</a>
+          <span class="navbar-brand">Quote Generator</span>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">About Author</a></li>
-            <li><a href="#about">About Quote Generator</a></li>
+            <li><a href="http://sabahang.github.io/">About Author</a></li>
+            <li><a href="#about" role="button" class="btn" data-toggle="modal">About Quote Generator</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -51,7 +51,7 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Click the buttons below to blast wisdom!</h1>
+        <h1>Click the button to blast wisdom!</h1>
         <p class="lead">The quotes are fetched from the Andruxnet public API on Mashape</p>
       </div>
       <div class="jumbotron">
@@ -59,11 +59,35 @@
         <p id="quote_author" class="lead">Knowledge sets you free, use it to liberate yourself and others</p>
         <button id="famous_quote_button" class="btn btn-lg btn-success">Generate Quote</button>
       </div>
-      <div id="twitter">
-      	<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Generate+a+random+quote+at&url=http%3A%2F%2Fsabahang.github.io%2Fquote-generator%2F&via=SabaAhang" data-size="large" align="left">Tweet</a>
-      </div>
+      <div class="row">
+	      <div id="twitter" class="text-center">
+	      	<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Generate+a+random+quote+at&url=http%3A%2F%2Fsabahang.github.io%2Fquote-generator%2F&via=SabaAhang" data-size="large">Tweet</a>
+	      </div>
+	  </div>
 
     </div><!-- /.container -->
+
+    <!-- Modal -->
+	<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">About Quote Generator</h4>
+	      </div>
+	      <div class="modal-body">
+	        This app was made as a part of Free Code Camp full-stack developer curriculum. This is a completely free self-paced course aimed at any audience from novice to experienced. Please consider contributing and checking it out at <a href="http://www.freecodecamp.com">www.freecodecamp.com</a>. <br>
+	        You can check my profile at <a href="http://www.freecodecamp.com/sabahang">freecodecamp.com/sabahang</a>
+	        <br>
+	        <br>
+	        Last update: 31 October 2015
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 
     <!-- Bootstrap core JavaScript

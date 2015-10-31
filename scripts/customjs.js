@@ -34,7 +34,7 @@ function generateTweetLink(quote){
     link += shortQuote + "...";
     link = encodeURI(link);
     link += "&url=http%3A%2F%2Fsabahang.github.io%2Fquote-generator%2F&via=SabaAhang"
-    var linkElement = '<a class="twitter-share-button" href="' + link + '" data-size="large" align="left">Tweet</a>'
+    var linkElement = '<a class="twitter-share-button" href="' + link + '" data-size="large">Tweet</a>'
     $('#twitter').children().replaceWith(linkElement);
     twttr.widgets.load();
 }
